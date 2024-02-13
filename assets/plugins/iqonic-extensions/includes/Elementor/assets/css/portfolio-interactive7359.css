@@ -1,0 +1,159 @@
+
+.css_prefix-interactive-portfolio {
+  position: relative;
+  overflow: hidden;
+}
+
+.css_prefix-interactive-portfolio .portfolio-wrapper .portfolio-images img
+{ object-fit: cover;
+  width: 29.5em;
+  border-radius: var(--border-radius-ten);
+} 
+
+.css_prefix-interactive-portfolio .portfolio-name-list .portfolio-item .portfolio-title-box
+{
+  position: relative;
+  margin-bottom: 6em;
+  display: inline-block;
+}
+.portfolio-name-list .portfolio-item:last-child .portfolio-title-box{
+  margin-bottom: 0;
+}
+.portfolio-name-list .portfolio-item:first-child .portfolio-title-box{
+  margin-top: 2.875em;
+}
+.css_prefix-interactive-portfolio .portfolio-name-list .portfolio-item.active .portfolio-title-image img {
+  opacity: 1;
+  animation: 0.5s down-enter ease-in;
+}
+.css_prefix-interactive-portfolio .portfolio-name-list .portfolio-item .portfolio-title-image img{
+  position: absolute;
+  width: auto;
+  display: block; 
+  left: 0; 
+  bottom: 0; 
+  z-index: -1;
+  opacity: 0;
+  animation: 0.5s down-leave ease-in;
+} 
+.css_prefix-interactive-portfolio .portfolio-wrapper .portfolio-image-item.active
+{
+	animation: interactive-active-image 1s forwards ease;
+}
+
+.css_prefix-interactive-portfolio .portfolio-wrapper .portfolio-image-item
+{	
+    width: 29.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    clip-path: inset(0 100% 0 0);
+    -webkit-clip-path: inset(0 100% 0 0);
+    animation: interactive-inactive-image 1s forwards ease;
+    transform: translate(-50%, -50%);
+ }
+ 
+@keyframes interactive-active-image {
+	0% {
+		clip-path: inset(100% 0 0 0);
+		-webkit-clip-path: inset(100% 0 0 0);
+	}
+
+	100% {
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes interactive-inactive-image {
+	0% {
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
+	}
+
+	100% { 
+		clip-path: inset(0 0 100% 0);
+		-webkit-clip-path: inset(0 0 100% 0);
+	}
+}
+.portfolio-title-box .portfolio-text{
+  position: relative;
+}
+.portfolio-item .portfolio-title-box.active{
+
+}
+.portfolio-item .portfolio-title-box.active .portfolio-text::after{
+  -webkit-animation: scale-in-hor-left .7s cubic-bezier(.25, .46, .45, .94) both;
+  animation: scale-in-hor-left .7s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+.portfolio-item .portfolio-title-box.active .portfolio-text::before{
+  -webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+  animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;  
+}
+.portfolio-title-box .portfolio-text::after, .portfolio-title-box .portfolio-text::before {
+  content: "";
+  position: absolute;
+  background: var(--color-theme-primary);
+  bottom: 0;
+  border-radius: var(--border-radius-box);
+  opacity: 0;
+}
+.portfolio-title-box .portfolio-text::after{
+  left: 0.0625em;
+  right: 0.155em;
+  width: auto;
+  height: 0.08em;
+}
+.portfolio-title-box .portfolio-text::before{
+  width: 0.08em;
+  height: 0.08em;
+  right: 0;
+}
+
+.portfolio-name-list {
+  height: 39.5em;
+  overflow-y: auto;
+}
+
+@media ( max-width: 1200px ){
+  .css_prefix-interactive-portfolio .portfolio-wrapper .portfolio-image-item{
+    width: 25.75em;
+  }
+  .portfolio-name-list {
+    height: 32em;
+    overflow-y: auto;
+  }
+}
+@media ( max-width: 992px ){
+  .css_prefix-interactive-portfolio .portfolio-wrapper .portfolio-image-item {
+    width: 12.5em;
+    }
+  .portfolio-name-list {
+    height: auto;
+    overflow-y: auto;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .css_prefix-interactive-portfolio .css_prefix-heading-title {
+    font-size: 1em;
+  }
+  .css_prefix-interactive-portfolio .portfolio-name-list .portfolio-item .portfolio-title-box {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 575px) {
+  .portfolio-name-list {
+    padding: 1em 2em;
+    margin-top: 13.5em;
+    text-align: center;
+  }
+  .css_prefix-interactive-portfolio .portfolio-wrapper .portfolio-image-item,
+  .css_prefix-interactive-portfolio .portfolio-wrapper .portfolio-images img {
+    width: 20em;
+  }
+}

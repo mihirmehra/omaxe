@@ -1,0 +1,92 @@
+.css_prefix-table table {
+    border: 0.0625em solid var(--border-color-light);
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    border: none;
+  }
+  
+  .css_prefix-table table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  .css_prefix-table table tr {
+    border: none;
+    border-bottom: 0.0625em solid var(--border-color-light);
+    padding: .35em;
+  }
+  .css_prefix-table table tbody tr:last-child{
+
+    border-bottom: none;
+  }
+  .css_prefix-table table th,
+  .css_prefix-table table td {
+    padding: 2em;
+    text-align: left;
+    border: none;
+  }
+  
+  .css_prefix-table table th {
+    font-size: var(--font-size-h4);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-h4);
+    padding: 0.8em;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .css_prefix-table table {
+      border: 0;
+    }
+    .css_prefix-table table th, .css_prefix-table table td{
+      padding: 1em;
+    }
+    .css_prefix-table table tr{
+      padding: 0;
+    }
+    .css_prefix-table table caption {
+      font-size: 1.3em;
+    }
+    
+    .css_prefix-table table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 0.0625em;
+      margin: -0.0625em;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 0.0625em;
+    }
+    
+    .css_prefix-table table tr {
+      border-bottom: 0.1875em solid var(--border-color-light);
+      display: block;
+      margin-bottom: 1em;
+    }
+    
+    .css_prefix-table table td {
+      border-bottom: 0.0625em solid var(--border-color-light);
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    .css_prefix-table table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a .css_prefix-table table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    .css_prefix-table table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  

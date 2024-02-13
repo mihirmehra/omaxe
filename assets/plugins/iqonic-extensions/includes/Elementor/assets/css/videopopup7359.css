@@ -1,0 +1,10 @@
+.css_prefix-popup-video_Style_1 a.css_prefix-video.popup-youtube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.css_prefix-popup-video_Style_1{
+    min-height: 31.25em;
+    border-radius: var(--border-radius-box);
+}

@@ -1,0 +1,73 @@
+.css_prefix-service{
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.css_prefix-service-one{
+    position: relative;
+    padding: 4.125em 4.25em;
+    background: var(--global-body-bgcolor);
+    display: block;
+    border-radius: var(--border-radius-box);
+    margin: 0 1.625em;
+}
+.css_prefix-service-one .css_prefix-service-description{
+margin-bottom: 0;
+color: var(--global-font-color);
+}
+.css_prefix-service-one .css_prefix-icon-image{
+    margin-bottom: 2em;
+}
+
+.tilt-effect.preserve-3d {
+    transform-style: preserve-3d;
+    -webkit-transform: perspective(50em);
+    transform: perspective(50em);
+}
+.tilt-effect.preserve-3d .css_prefix-service-one{
+    transform: translateZ(3.125em);  
+}
+.css_prefix-service-one .css_prefix-icon-image img{
+    width: 9.75em;
+}
+
+.css_prefix-service-two.css_prefix-service .css_prefix-icon-image svg ,.css_prefix-service-two.css_prefix-service .css_prefix-icon-image img{
+width: 3.75em;
+height: auto;
+margin-right: 1.5em;
+}
+.css_prefix-service-two.css_prefix-service .css_prefix-icon-image i{
+    font-size: 1.5em;
+    margin-right: 1.5em;
+}
+.css_prefix-service-two.css_prefix-service .css_prefix-service-image img{
+border-radius: var(--border-radius-box);
+}
+.css_prefix-service-two.css_prefix-service .css_prefix-service-info{
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5em;
+}
+.css_prefix-service.css_prefix-service-two:hover .css_prefix-heading-title{
+    color: var(--color-theme-primary);
+}
+
+@media(max-width:1024px){
+.css_prefix-service-one{
+    padding: 2em;
+    margin:0 1em;
+ }
+ .tilt-effect.preserve-3d .css_prefix-service-one{
+    transform: translateZ(0);
+    margin: 0;
+ }
+}
+
+
+@media(max-width:767px){
+    .css_prefix-service-two.css_prefix-service .css_prefix-service-info{
+        margin-top: 1.5em;
+    }
+}

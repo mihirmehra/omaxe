@@ -1,0 +1,28 @@
+.hf-elementor-layout .navbar-brand, .sidebar-scrollbar .navbar-brand, footer .navbar-brand, header .navbar-brand {
+    font-size: inherit;
+    padding-top: 0;
+}
+.navbar-brand .logo_image {
+    height: 150px !important;
+    max-height: 150px !important;
+}
+.black-bg-image{
+    width: 70%;
+    margin: auto;
+}
+.css_prefix-subtitle{
+    text-align: center;
+}
+.css_prefix-title{
+    text-align: center;
+}
+.elementor-6836 .elementor-element.elementor-element-05f2dec{
+    margin-top: 0px;
+    padding: 3em 1em 11em 1em;
+}
+.elementor-section.elementor-inner-section.elementor-element.elementor-element-a2da6c4.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default{
+    padding: 3em 1em 11em 1em;
+}
+.elementor-6836 .elementor-element.elementor-element-5a03e70{
+    margin-bottom: 3em !important;
+}

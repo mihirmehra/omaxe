@@ -1,0 +1,240 @@
+.css_prefix-price-table-1 .css_prefix-inner-box {
+    background: var(--global-body-lightbg);
+    border-radius: var(--box-border-radius);
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    border-radius: var(--border-radius-box);
+    -webkit-transition: all .5s ease-in-out;
+}
+/*pricing header  */
+.css_prefix-price-table-1 .css_prefix-inner-box .css_prefix-price-header {
+    padding: 2.5em 1.625em 0 1.625em;
+    position: relative;
+
+}
+
+.css_prefix-price-table-1 .css_prefix-inner-box .css_prefix-price-header .pricing-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2em;
+    flex-wrap: wrap;
+    border-bottom: 0.0625em solid var(--border-color-light);
+}
+
+.css_prefix-price-table-1 .css_prefix-price-title{
+    font-size: var(--font-size-h5);
+}
+
+.css_prefix-price-table-1 .css_prefix-inner-box .pricing-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 6em;
+}
+
+.css_prefix-price-table-1 .css_prefix-inner-box .pricing-heading .css_prefix-price-title {
+color:var(--global-font-color);
+line-height:2em;
+}
+
+.css_prefix-price-table-1 .css_prefix-inner-box .pricing-heading .price-label {
+padding: 0.625em 1.375;
+background-image: linear-gradient(293deg,var(--text-gradient-one) -15.38%,var(--text-gradient-two) 57.43%,var(--text-gradient-three) 94.88%);
+border-radius: 2.25em 0 0 2.25em;
+color: var(--color-theme-white);
+font-size:  var(--font-size-normal);
+line-height: var(--font-line-height-body);
+position: absolute;
+right: 0;
+top: 2.25em;
+}
+
+
+.css_prefix-price-table-1:hover .css_prefix-inner-box .css_prefix-price-header,
+.css_prefix-price-table-1.active .css_prefix-inner-box .css_prefix-price-header,
+.css_prefix-price-table-1:hover .css_prefix-inner-box .css_prefix-price-header .css_prefix-price-label,
+.css_prefix-price-table-1.active .css_prefix-inner-box .css_prefix-price-header .css_prefix-price-label,
+.css_prefix-price-table-1:hover .css_prefix-inner-box .css_prefix-price-service li,
+.css_prefix-price-table-1.active .css_prefix-inner-box .css_prefix-price-service li {
+    color: var(--color-theme-white);
+} 
+.css_prefix-price-table-1:hover .css_prefix-inner-box .css_prefix-price-footer .css_prefix-button-container .css_prefix-button {  
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    
+}
+.css_prefix-price-table-1.active .css_prefix-inner-box .css_prefix-price-footer .css_prefix-button-container .css_prefix-button::before {
+    opacity: 1;
+}
+
+.css_prefix-price-table-1 .css_prefix-theme-button {
+    background: var(--color-theme-primary);
+    color: var(--color-theme-white);
+}
+
+.css_prefix-price-table-1 .css_prefix-theme-button:hover::after {
+    background: var(--color-theme-white);
+
+}
+ .css_prefix-price-table-1 .css_prefix-theme-button:hover {
+    color: var(--color-theme-primary) !important;
+} 
+
+.css_prefix-price-table-1 .icon-box-img svg {
+    background: var(--color-theme-white);
+    padding: 1.25em;
+    height: 5em;
+    width: 5em;
+    border-radius: var(--border-radius);
+}
+
+.css_prefix-price-table-1 .css_prefix-price-description {
+    padding: 0;
+    margin: 2em  0;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.css_prefix-price-table-1 .css_prefix-price-body {
+    padding: 0 1.625em 0 1.625em;
+}
+
+.css_prefix-price-table-1 .css_prefix-Price-symbol {
+    display: inline-flex;
+    align-items: center;
+}
+
+.css_prefix-price-table-1 .css_prefix-price-service {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 1.375em;
+    border-bottom: 0.0625em solid var(--border-color-light);
+}
+
+.css_prefix-price-table-1 .css_prefix-price-service svg,
+.css_prefix-price-table-1 .css_prefix-price-service i {
+    width: 1.375em;
+    height: 1em;
+    position: absolute;
+    left: 0;
+    top: 0.375em;
+}
+
+.css_prefix-price-table-1 .css_prefix-price {
+    background: var(--color-theme-primary-light-bg);
+}
+
+.css_prefix-price-table-1 .css_prefix-price .price{
+    display: flex;
+}
+
+.css_prefix-price-table-1 .month {
+    color: var(--color-theme-primary);
+    text-transform: none;
+    font-weight: var(--font-weight-bold);
+}
+
+.css_prefix-price-table-1 .css_prefix-price{
+    color: var(--color-theme-primary);
+    font-weight: var(--font-weight-bold);
+}
+
+.css_prefix-price-table-1 .dollar {
+    color: var(--color-theme-primary);
+    font-weight: var(--font-weight-bold);
+}
+.css_prefix-price-container .css_prefix-price-details .price{display: flex;}
+
+.css_prefix-price-table-1 .css_prefix-inner-box .css_prefix-price-service li {
+    padding: 0 0 0.625em 2.5em;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.css_prefix-price-table-1 .css_prefix-inner-box .css_prefix-price-footer {
+    padding: 1em 0;
+}
+
+.css_prefix-price-table-1 .css_prefix-inner-box .css_prefix-price-service li span {
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+.css_prefix-price-description{
+    margin: 2em 0;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+.css_prefix-price-table-1 .css_prefix-inner-box .css_prefix-price-footer .css_prefix-button-container .css_prefix-button
+{   padding: 1em 1em;
+    background: var(--global-body-bgcolor);
+    display: block;
+    text-align: center;
+    position: relative;
+}
+.css_prefix-price-table-1 .css_prefix-inner-box .css_prefix-price-footer .css_prefix-button-container .css_prefix-button .text-btn{
+    z-index: 1;
+    position: relative;
+}
+.css_prefix-price-table-1 .css_prefix-inner-box .css_prefix-price-footer .css_prefix-button-container .css_prefix-button:before , .css_prefix-price-table-1.active .css_prefix-inner-box .css_prefix-price-footer .css_prefix-button-container .css_prefix-theme-button::before {
+    content: "";
+    background-image: linear-gradient(293deg,var(--text-gradient-one) -15.38%,var(--text-gradient-two) 57.43%,var(--text-gradient-three) 94.88%);
+    opacity: 0;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+.css_prefix-price-table-1:hover .css_prefix-inner-box .css_prefix-price-footer .css_prefix-button-container .css_prefix-button:before{
+    opacity: 1;
+}
+
+.css_prefix-price-table-1 .css_prefix-inner-box .css_prefix-price-footer {
+    padding: 2em 1.625em 2.5em 1.625em;
+}
+
+
+/* responsive  */
+@media (max-width:480px) {
+   
+    .css_prefix-price-table-1 .css_prefix-inner-box .pricing-heading .price-label {
+        padding: 0.3125em 0.625em;
+        top: 1em;
+    }
+    .css_prefix-price-table-1 .css_prefix-inner-box .pricing-heading {
+        margin-top: 3.125em;
+        padding-right: 0;
+    }
+    .css_prefix-price-table-1 .css_prefix-inner-box .css_prefix-price-footer .css_prefix-button-container .css_prefix-button {
+        padding: 0.625em 2em;
+    }
+}
+@media (max-width:325px) {
+    .css_prefix-price-table-1 .css_prefix-price-body {
+        padding: 1.25em;
+    }
+
+}

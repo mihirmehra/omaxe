@@ -1,0 +1,89 @@
+
+:root{
+    --icon-container-size: 2em;
+    --icon-size: 1.25em;
+    --icon-padding: 0.3125em;
+}
+.iqonic-extension-social-position-horizontal .css_prefix-social-item {
+    display: inline-block;
+    word-break: break-word;
+}
+
+.css_prefix-share {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.css_prefix-social-icons .css_prefix-social-item .css_prefix-share {
+    /* font-size: var(--icon-size,1em); */
+    line-height: var(--icon-container-size,1em);
+    width: var(--icon-container-size,1em);
+    height: var(--icon-container-size,1em);
+}
+.css_prefix-social-icons .css_prefix-social-item .css_prefix-share {
+    font-size: var(--icon-size,1em);
+}
+.css_prefix-social-icons .css_prefix-social-item .css_prefix-share svg{
+    width: var(--icon-size,1em);
+    height: var(--icon-size,1em);
+}
+
+.css_prefix-social-item a:hover{
+    color: var(--color-theme-primary);
+}
+
+.iqonic-extension-shape-rounded .css_prefix-share{
+    border-radius: var(--border-radius-box);
+    -webkit-border-radius: var(--border-radius-box);
+    -moz-border-radius: var(--border-radius-box);
+    -o-border-radius: var(--border-radius-box);
+    -ms-border-radius: var(--border-radius-box);
+}
+
+.iqonic-extension-shape-square .css_prefix-share{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -ms-border-radius: 0;
+}
+.css_prefix-social-names .css_prefix-social-item:last-child{
+    padding: 0;
+}
+a.css_prefix-share{
+    color: var(--color-theme-white);
+    font-weight: var(--font-weight-bold);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+
+.css_prefix-social-names .css_prefix-social-item{
+    padding-right: 0;
+}
+
+.css_prefix-social-share.css_prefix-social-icons-names .css_prefix-social-item a svg,
+.css_prefix-social-share.css_prefix-social-icons-names .css_prefix-social-item a i {
+    margin-right: 0.625em;
+}
+.css_prefix-social-share.css_prefix-social-icons-names .css_prefix-social-item a i,
+.css_prefix-social-share.css_prefix-social-icons .css_prefix-social-item a i{
+    transition: none;
+}
+
+.css_prefix-social-names .css_prefix-social-item a:hover{
+    -webkit-transform: translateY(-.3125em);
+    transform: translateY(-.3125em);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
